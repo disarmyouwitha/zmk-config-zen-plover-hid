@@ -39,7 +39,8 @@ To refresh these graphics after editing the keymap, run
 - Hold the **middle left thumb key** for SYM+NUM; release it to return.
 - Tap the **outer right thumb key** to enter STENO.
 - The **bottom-right main key** is sticky Shift (also available on SYM+NUM).
-- Tap the **bottom-left key in STENO** to return to MAIN.
+- In STENO, tap the **left thumb key immediately left of A** to return to MAIN.
+  The bottom-left main-row key also returns to MAIN.
 - A/S/Z/X/C/V/O hold actions send **Command+A/S/Z/X/C/V/F**.
 - Hold **P** for **Command+Shift+4** (screenshot selection).
 - Hold **semicolon** for ordinary **Enter**, as requested.

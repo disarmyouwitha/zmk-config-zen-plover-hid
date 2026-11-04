@@ -9,7 +9,7 @@ SOURCE = ROOT / 'config/corneish_zen.keymap'
 OUTPUT = ROOT / 'docs/keymap'
 LAYERS = [('main_layer', 'main', 'Main', '0', 'Hold the middle left thumb for Sym+Num · Tap outer right thumb for Steno'),
           ('sym_num_layer', 'sym-num', 'Sym+Num', '1', 'Release the middle left thumb to return to Main'),
-          ('steno_layer', 'steno', 'Steno · Plover HID', '2', 'Tap bottom-left to return to Main · Each S, star, and number key has its own report index')]
+          ('steno_layer', 'steno', 'Steno · Plover HID', '2', 'Tap the thumb left of A to return to Main · Bottom-left key also exits')]
 NAMES = {'TAB':'Tab', 'ESC':'Esc', 'LCTRL':'Ctrl', 'LSHIFT':'Shift', 'LCMD':'⌘',
          'SPACE':'Space', 'BSPC':'Bksp', 'RET':'Enter', 'DEL':'Del →', 'LBKT':'[', 'RBKT':']',
          'LBRC':'{', 'RBRC':'}', 'SQT':"'", 'DQT':'"', 'LPAR':'(', 'RPAR':')',

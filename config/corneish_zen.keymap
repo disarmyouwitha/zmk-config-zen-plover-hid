@@ -65,7 +65,7 @@
 &plv PLV_NMC &plv PLV_NM  &plv PLV_NM2 &plv PLV_NM3 &plv PLV_NM4 &plv PLV_NM5    &plv PLV_NM6 &plv PLV_NM7 &plv PLV_NM8 &plv PLV_NM9 &plv PLV_NMA &plv PLV_NMB
 &none        &plv PLV_SL  &plv PLV_TL  &plv PLV_PL  &plv PLV_HL  &plv PLV_ST     &plv PLV_ST3 &plv PLV_FR  &plv PLV_PR  &plv PLV_LR  &plv PLV_TR  &plv PLV_DR
 &to MAIN     &plv PLV_SL2 &plv PLV_KL  &plv PLV_WL  &plv PLV_RL  &plv PLV_ST2    &plv PLV_ST4 &plv PLV_RR  &plv PLV_BR  &plv PLV_GR  &plv PLV_SR  &plv PLV_ZR
-                                      &none &plv PLV_A &plv PLV_O               &plv PLV_E &plv PLV_U &none
+                                      &to MAIN &plv PLV_A &plv PLV_O               &plv PLV_E &plv PLV_U &none
             >;
         };
     };
