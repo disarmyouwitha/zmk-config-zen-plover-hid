@@ -1,0 +1,17 @@
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: petercpark
+      url-base: https://github.com/petercpark
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      # Latest upstream main when migrated; pin for reproducible firmware.
+      revision: 4dd95d7840eb3d5a3f59bb29fbf1ab054715ef85
+      import: app/west.yml
+    - name: zmk-hid-io-plover-hid
+      remote: petercpark
+      revision: d895457418590dddf628c5ae907b39deec7095ff
+  self:
+    path: config
