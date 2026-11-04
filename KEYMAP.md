@@ -2,8 +2,8 @@
 
 Three layers, 42 keys per layer. In MAIN, `tap / hold` shows the two actions.
 Hold actions use a 200 ms tapping term. MAIN ⇢ STENO is the outer right thumb key;
-STENO ⇢ MAIN is the left thumb immediately left of A (or the bottom-left
-main-row key). Hold the middle left thumb for SYM+NUM.
+STENO ⇢ MAIN is only the left thumb immediately left of A. The main-row key
+left of lower S is disabled. Hold the middle left thumb for SYM+NUM.
 
 ## MAIN
 
@@ -41,7 +41,7 @@ ordinary number row, as in the reference's unlabeled digit keys.
  LEFT HALF                                                       RIGHT HALF
  #C     #1     #2     #3     #4     #5             #6     #7     #8     #9     #A     #B
  —      S1-    T-     P-     H-     *1             *3     -F     -P     -L     -T     -D
- MAIN   S2-    K-     W-     R-     *2             *4     -R     -B     -G     -S     -Z
+ —      S2-    K-     W-     R-     *2             *4     -R     -B     -G     -S     -Z
                 MAIN   A     O                     E      U      —
 ```
 
