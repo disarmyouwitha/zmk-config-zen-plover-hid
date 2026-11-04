@@ -1,7 +1,7 @@
 # Zen V2 — Voyager layout for Mac
 
 Three layers, 42 keys per layer. In MAIN, `tap / hold` shows the two actions.
-Hold actions use a 200 ms tapping term. MAIN ⇢ STENO is the bottom-right key;
+Hold actions use a 200 ms tapping term. MAIN ⇢ STENO is the outer right thumb key;
 STENO ⇢ MAIN is the bottom-left key. Hold the middle left thumb for SYM+NUM.
 
 ## MAIN
@@ -10,8 +10,8 @@ STENO ⇢ MAIN is the bottom-left key. Hold the middle left thumb for SYM+NUM.
  LEFT HALF                                                       RIGHT HALF
  Tab/Esc  Q/[    W/]    E/{    R/}    T/'           Y/-   U/&   I/*    O/⌘F   P/⌘⇧4    Delete
  Ctrl     A/⌘A   S/⌘S   D/(    F/)    G/"           H/_   J/!   K/#    L/~    ;/Enter  Enter
- Shift    Z/⌘Z   X/⌘X   C/⌘C   V/⌘V   B/`           N/=   M/@   ,/$    ./^    / / \    STENO
-                ⌘     Hold SYM+NUM  Backspace       Space  Space  Sticky Shift
+ Shift    Z/⌘Z   X/⌘X   C/⌘C   V/⌘V   B/`           N/=   M/@   ,/$    ./^    / / \    Sticky Shift
+                ⌘     Hold SYM+NUM  Backspace       Space  Space  STENO
 ```
 
 Ctrl+A/S/Z/X/C/V/F editing shortcuts become Command+A/S/Z/X/C/V/F.
@@ -24,14 +24,14 @@ Control, Shift, symbols and Shift+Left retain their meanings.
  LEFT HALF                                                       RIGHT HALF
  ⌘⌥Esc   BT1    BT2    Up     BT clear  —          KP+    7    8    9    Backspace  Backspace
  —        —     Left   Down   Right     —           -     4    5    6    Enter      Enter
- ⇧Left    —      —     Space    —       —           =     1    2    3    .           —
-                  ⌘   (held)  Backspace            —     0    Sticky Shift
+ ⇧Left    —      —     Space    —       —           =     1    2    3    .       Sticky Shift
+                  ⌘   (held)  Backspace            —     0         —
 ```
 
 BT1/BT2 select ZMK profiles 0/1. BT clear removes the selected profile's host
 bond; forget it on the host too before re-pairing. These replace unused Voyager
-LED positions Q/W/R; all other LED controls are omitted. The extra Zen thumb
-keys retain Command and sticky Shift. Plus sends keypad Plus; digits use the
+LED positions Q/W/R; all other LED controls are omitted. The extra left Zen thumb retains Command. Sticky Shift is on the bottom-right
+main key in both MAIN and SYM+NUM; the outer right thumb enters STENO from MAIN. Plus sends keypad Plus; digits use the
 ordinary number row, as in the reference's unlabeled digit keys.
 
 ## STENO — Plover HID

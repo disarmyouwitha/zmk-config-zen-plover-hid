@@ -37,7 +37,8 @@ To refresh these graphics after editing the keymap, run
 ### Layer controls and Mac translation
 
 - Hold the **middle left thumb key** for SYM+NUM; release it to return.
-- Tap the **bottom-right main key** to enter STENO.
+- Tap the **outer right thumb key** to enter STENO.
+- The **bottom-right main key** is sticky Shift (also available on SYM+NUM).
 - Tap the **bottom-left key in STENO** to return to MAIN.
 - A/S/Z/X/C/V/O hold actions send **Command+A/S/Z/X/C/V/F**.
 - Hold **P** for **Command+Shift+4** (screenshot selection).
@@ -46,7 +47,7 @@ To refresh these graphics after editing the keymap, run
 - Physical Control and Shift, punctuation holds, arrows, and Shift+Left stay as shown.
 - The old separate SYMBOL and GAMING layers are removed.
 - Zen has one extra thumb key per half: left outer stays Command; right outer
-  stays sticky Shift. The two Voyager right thumb positions both send Space.
+  enters STENO. The two Voyager right thumb positions both send Space.
 - Voyager LED controls are omitted. On SYM+NUM, Q selects Bluetooth profile 1,
   W selects profile 2, and R clears the selected profile. Other LED positions
   are disabled. The top-left SYM+NUM key opens the Mac Force Quit dialog

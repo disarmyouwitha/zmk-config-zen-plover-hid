@@ -7,7 +7,7 @@ import re
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / 'config/corneish_zen.keymap'
 OUTPUT = ROOT / 'docs/keymap'
-LAYERS = [('main_layer', 'main', 'Main', '0', 'Hold the middle left thumb for Sym+Num · Tap bottom-right for Steno'),
+LAYERS = [('main_layer', 'main', 'Main', '0', 'Hold the middle left thumb for Sym+Num · Tap outer right thumb for Steno'),
           ('sym_num_layer', 'sym-num', 'Sym+Num', '1', 'Release the middle left thumb to return to Main'),
           ('steno_layer', 'steno', 'Steno · Plover HID', '2', 'Tap bottom-left to return to Main · Each S, star, and number key has its own report index')]
 NAMES = {'TAB':'Tab', 'ESC':'Esc', 'LCTRL':'Ctrl', 'LSHIFT':'Shift', 'LCMD':'⌘',
