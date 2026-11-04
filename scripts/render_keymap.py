@@ -2,6 +2,7 @@
 """Regenerate README layer graphics from config/corneish_zen.keymap (stdlib only)."""
 from pathlib import Path
 import html
+import hashlib
 import re
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -94,7 +95,14 @@ text{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-seri
             else: svg.append(text(x+36,y+38,tap))
             svg.append('</g>')
     svg += [text(32,516,caption,'footer'),'</svg>']
-    target=OUTPUT/f'{filename}.svg';target.write_text('\n'.join(svg)+'\n');print(target.relative_to(ROOT))
+    content='\n'.join(svg)+'\n'
+    digest=hashlib.sha256(content.encode()).hexdigest()[:12]
+    target=OUTPUT/f'{filename}-{digest}.svg'
+    target.write_text(content)
+    readme=ROOT/'README.md'
+    pattern=r'docs/keymap/'+re.escape(filename)+r'(?:-[0-9a-f]{12})?\.svg'
+    readme.write_text(re.sub(pattern, target.relative_to(ROOT).as_posix(), readme.read_text()))
+    print(target.relative_to(ROOT))
 
 if __name__ == '__main__':
     OUTPUT.mkdir(parents=True,exist_ok=True)

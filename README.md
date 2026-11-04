@@ -21,15 +21,15 @@ are generated directly from the firmware keymap.
 
 #### Main · 0
 
-![Main layer: tap and Mac hold actions](docs/keymap/main.svg)
+![Main layer: tap and Mac hold actions](docs/keymap/main-043325bdeb8e.svg)
 
 #### Sym+Num · 1
 
-![Sym+Num layer: navigation, numbers, and Bluetooth controls](docs/keymap/sym-num.svg)
+![Sym+Num layer: navigation, numbers, and Bluetooth controls](docs/keymap/sym-num-5e1a3bd86e63.svg)
 
 #### Steno · 2
 
-![Steno layer: dedicated Plover HID keys in Voyager positions](docs/keymap/steno.svg)
+![Steno layer: dedicated Plover HID keys in Voyager positions](docs/keymap/steno-c6242eb9312e.svg)
 
 To refresh these graphics after editing the keymap, run
 `python3 scripts/render_keymap.py`.
