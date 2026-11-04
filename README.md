@@ -14,6 +14,26 @@ are in [KEYMAP.md](KEYMAP.md).
 Hold-tap keeps the 200 ms tapping term, 125 ms quick-tap and prior-idle settings.
 Sleep remains 15 minutes. The display uses upstream Zen defaults.
 
+### Layer graphics
+
+Tap actions appear above the divider; hold actions appear below. The diagrams
+are generated directly from the firmware keymap.
+
+#### Main · 0
+
+![Main layer: tap and Mac hold actions](docs/keymap/main.svg)
+
+#### Sym+Num · 1
+
+![Sym+Num layer: navigation, numbers, and Bluetooth controls](docs/keymap/sym-num.svg)
+
+#### Steno · 2
+
+![Steno layer: dedicated Plover HID keys in Voyager positions](docs/keymap/steno.svg)
+
+To refresh these graphics after editing the keymap, run
+`python3 scripts/render_keymap.py`.
+
 ### Layer controls and Mac translation
 
 - Hold the **middle left thumb key** for SYM+NUM; release it to return.
