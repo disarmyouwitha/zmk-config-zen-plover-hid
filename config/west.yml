@@ -13,7 +13,7 @@ manifest:
       import: app/west.yml
     - name: zmk-javelin-steno
       remote: disarmyouwitha
-      revision: 43f825e
+      revision: 07f8f4f
     - name: javelin-steno
       remote: jthlim
       revision: 22726675b2dcf3b8b6ba1e20898f25e324b2260a
