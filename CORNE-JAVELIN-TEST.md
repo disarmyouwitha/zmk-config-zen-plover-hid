@@ -36,3 +36,10 @@ After a successful build, flash the corresponding UF2 to each half's bootloader 
 ## Status
 
 See GitHub Actions for actual compilation status. Do not treat this document as confirmation of a successful build or successful on-device translation; those results are reported separately.
+
+
+## First on-device test: failure and corrected table pointer
+
+The initial firmware typed normally but hung after the first steno chord. Investigation found that the compiler pointed the stroke-definition array one entry before its first entry, while the native engine's CreateStrokeCache copies the first entry and subtracts one from its RAM pointer itself. This double adjustment made the engine interpret dictionary-name bytes as pointers. The first Python/UF2 checks shared that incorrect assumption, so their success did not validate the constructor path. Both checks are now corrected, with a malformed-pointer regression.
+
+The diagnostic central build enables USB logging, uses an 8 KB workqueue stack, and performs all four dictionary lookups through the native engine before enabling translation. Its log records each init phase, key event, and emitted HID event. USB serial logs and the next physical typing test are required to confirm the fix. The original peripheral can remain installed because the split key bindings/protocol are unchanged.

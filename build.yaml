@@ -1,6 +1,7 @@
 include:
   - board: nice_nano//zmk
     shield: corne_left
+    snippet: zmk-usb-logging
     artifact-name: corne_javelin_tiny_left
   - board: nice_nano//zmk
     shield: corne_right

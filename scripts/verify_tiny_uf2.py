@@ -29,8 +29,10 @@ if 'left' in p.name:
  def u32(a):return sum(memory[a+i]<<(8*i) for i in range(4))
  assert u32(origin+32)==u32(u32(origin+12)+u32(origin+8))
  definition=u32(origin+36);assert origin<=definition<origin+142
- text=u32(definition+8);arr=u32(definition+12);sd=arr+12
+ text=u32(definition+8);arr=u32(definition+12);sd=arr
+ assert origin<=sd and sd+12<=origin+142, "stroke table outside dictionary"
  mask=u32(sd);data=u32(sd+4);blocks=u32(sd+8)
+ assert origin<=data<=blocks and blocks+20<=origin+142, "invalid stroke-table pointers"
  def lookup(word):
   index=zlib.crc32(struct.pack('<I',word))&mask
   for _ in range(mask+1):
