@@ -2,16 +2,21 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: petercpark
-      url-base: https://github.com/petercpark
+    - name: disarmyouwitha
+      url-base: https://github.com/disarmyouwitha
+    - name: jthlim
+      url-base: https://github.com/jthlim
   projects:
     - name: zmk
       remote: zmkfirmware
-      # Latest upstream main when migrated; pin for reproducible firmware.
       revision: 4dd95d7840eb3d5a3f59bb29fbf1ab054715ef85
       import: app/west.yml
-    - name: zmk-hid-io-plover-hid
-      remote: petercpark
-      revision: d895457418590dddf628c5ae907b39deec7095ff
+    - name: zmk-javelin-steno
+      remote: disarmyouwitha
+      revision: 4b47ed3
+    - name: javelin-steno
+      remote: jthlim
+      revision: 22726675b2dcf3b8b6ba1e20898f25e324b2260a
+      path: zmk-javelin-steno/javelin
   self:
     path: config
