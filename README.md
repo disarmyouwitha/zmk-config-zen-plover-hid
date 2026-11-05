@@ -1,3 +1,5 @@
+> **Latest working build:** onboard Javelin on a 42-key Corne with nice!nano v2, using the Zen keymap and a tiny internal-flash dictionary. Physical test passed: **if the cat is the cat**. See [test results and flash-work handoff](CORNE-JAVELIN-TEST.md). This branch's build matrix targets Corne, not the original Zen hardware.
+
 # Corne-ish Zen V2 — Plover HID + Voyager Mac Keymap
 
 This configuration uses upstream ZMK main commit
