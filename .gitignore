@@ -4,5 +4,3 @@ zephyr/
 modules/
 tools/
 .west/
-__pycache__/
-*.pyc
